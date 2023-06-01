@@ -9,10 +9,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
 }
 body .container {
   display: flex;
   flex-direction: column;
+  background-color: hsl(217, 19%, 24%);
   border: 1px solid green;
   padding: 1rem;
 }/*# sourceMappingURL=styles.css.map */
