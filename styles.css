@@ -21,28 +21,44 @@ body .container {
   justify-content: center;
   align-items: center;
   background-color: hsl(217, 19%, 24%);
-  outline: 1px solid green;
   padding: 2rem;
   border-radius: 1.4rem;
   text-align: center;
 }
-body .container h2 {
+body .container .title-advice {
   color: hsl(150, 100%, 66%);
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
 }
-body .container p {
-  font-size: 2rem;
-  color: hsl(193, 38%, 86%);
-  margin-bottom: 2rem;
+body .container .the-divider {
+  margin-bottom: 3rem;
 }
-body .container button {
+body .container .the-advice {
+  font-size: 1.55rem;
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 3rem;
+}
+body .container .the-button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 35%;
+  margin-top: 2rem;
   width: 4rem;
   height: 4rem;
   outline: none;
   border: none;
   background-color: hsl(150, 100%, 66%);
-  border-radius: 50%;
+  border-radius: 10rem;
+}
+body .container .the-button the-btn-img {
+  width: 100%;
+  border-radius: 10rem;
+}
+body .container .the-button:hover {
+  box-shadow: 0px 0px 34px 8px #52ffa8;
+}
+body .container .the-button:active {
+  background-color: hsl(217, 19%, 38%);
 }/*# sourceMappingURL=styles.css.map */
