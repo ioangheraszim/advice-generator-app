@@ -10,11 +10,39 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
 }
 body .container {
+  max-width: 545px;
+  height: 340px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(217, 19%, 24%);
-  border: 1px solid green;
-  padding: 1rem;
+  outline: 1px solid green;
+  padding: 2rem;
+  border-radius: 1.4rem;
+  text-align: center;
+}
+body .container h2 {
+  color: hsl(150, 100%, 66%);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+body .container p {
+  font-size: 2rem;
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 2rem;
+}
+body .container button {
+  width: 4rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
 }/*# sourceMappingURL=styles.css.map */

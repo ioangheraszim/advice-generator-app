@@ -22,14 +22,45 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: $dark-blue;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
     
 
     .container {
+        max-width: 545px;
+        height: 340px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: $dark-grayish-blue;
-        border: 1px solid green;
-        padding: 1rem;
+        outline: 1px solid green;
+        padding: 2rem;
+        border-radius: 1.4rem;
+        text-align: center;
+
+        h2 {
+            color: $neon-green;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: .4rem;
+        }
+
+        p {
+            font-size: 2rem;
+            color: $light-cyan;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            width: 4rem;
+            height: 4rem;
+            outline: none;
+            border: none;
+            background-color: $neon-green;
+            border-radius: 50%;            
+        }
     }
 }
 
