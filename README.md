@@ -27,8 +27,9 @@ Users should be able to:
 - Generate a new piece of advice by clicking the dice icon
 
 ### Screenshot
-
+##Mobile Version
 ![Mobile Version](./screenshots/mobile-version.png)
+##Desktop Version
 ![Dekstop Version](./screenshots/desktop-version.png)
 
 ### Links
