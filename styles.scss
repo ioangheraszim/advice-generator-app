@@ -27,8 +27,8 @@ body {
     
 
     .container {
-        max-width: 545px;
-        height: 340px;
+        max-width: 23.438rem;
+        height: 21.875rem;        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -37,6 +37,7 @@ body {
         padding: 2rem;
         border-radius: 1.4rem;
         text-align: center;
+        position: relative;
 
         .title-advice {
             color: $neon-green;
@@ -46,8 +47,13 @@ body {
             letter-spacing: .4rem;
         }
         
-        .the-divider {           
+        .the-divider-desktop {
+            display: none;
             margin-bottom: 3rem;
+        }
+
+        .the-divider-mobile {            
+            margin-bottom: 5rem;
         }
 
         .the-advice {
@@ -59,7 +65,7 @@ body {
         .the-button {
             cursor: pointer;
             position: absolute;
-            bottom: 35%;
+            bottom: -10%;
             margin-top: 2rem;
             width: 4rem;
             height: 4rem;
@@ -75,7 +81,7 @@ body {
         }
 
         .the-button:hover {
-            box-shadow: 0px 0px 34px 8px #52ffa8;
+            box-shadow: 0px 0px 34px 8px $neon-green;
         }
 
         .the-button:active {
@@ -84,3 +90,19 @@ body {
     }
 }
 
+@media (min-width: 45rem) {
+    body {
+        .container {            
+            max-width: 545px;
+
+            .the-divider-desktop {
+                display: flex;
+            }
+
+            .the-divider-mobile {
+                display: none;
+            }
+        }
+    }
+   
+}

@@ -14,8 +14,8 @@ body {
   font-weight: 800;
 }
 body .container {
-  max-width: 545px;
-  height: 340px;
+  max-width: 23.438rem;
+  height: 21.875rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +24,7 @@ body .container {
   padding: 2rem;
   border-radius: 1.4rem;
   text-align: center;
+  position: relative;
 }
 body .container .title-advice {
   color: hsl(150, 100%, 66%);
@@ -32,8 +33,12 @@ body .container .title-advice {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
 }
-body .container .the-divider {
+body .container .the-divider-desktop {
+  display: none;
   margin-bottom: 3rem;
+}
+body .container .the-divider-mobile {
+  margin-bottom: 5rem;
 }
 body .container .the-advice {
   font-size: 1.55rem;
@@ -43,7 +48,7 @@ body .container .the-advice {
 body .container .the-button {
   cursor: pointer;
   position: absolute;
-  bottom: 35%;
+  bottom: -10%;
   margin-top: 2rem;
   width: 4rem;
   height: 4rem;
@@ -57,8 +62,20 @@ body .container .the-button the-btn-img {
   border-radius: 10rem;
 }
 body .container .the-button:hover {
-  box-shadow: 0px 0px 34px 8px #52ffa8;
+  box-shadow: 0px 0px 34px 8px hsl(150, 100%, 66%);
 }
 body .container .the-button:active {
   background-color: hsl(217, 19%, 38%);
+}
+
+@media (min-width: 45rem) {
+  body .container {
+    max-width: 545px;
+  }
+  body .container .the-divider-desktop {
+    display: flex;
+  }
+  body .container .the-divider-mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
